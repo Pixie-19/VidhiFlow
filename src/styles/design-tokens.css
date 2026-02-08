@@ -1,39 +1,38 @@
 /**
- * VidhiFlow design tokens – aligned with Bolt design system (Figma).
- * Semantic tokens allow swapping themes or syncing from Figma later.
+ * VidhiFlow design tokens – Modern SaaS Theme (Indigo/Slate).
  */
 :root {
-  /* Primary (judiciary navy) */
-  --bolt-primary: #1a365d;
-  --bolt-primary-hover: #2c5282;
-  --bolt-primary-muted: rgba(26, 54, 93, 0.08);
-  --bolt-primary-border: rgba(26, 54, 93, 0.2);
+  /* Primary (Indigo-600) */
+  --bolt-primary: #4f46e5;
+  --bolt-primary-hover: #4338ca;
+  --bolt-primary-muted: #e0e7ff;
+  --bolt-primary-border: #c7d2fe;
 
-  /* Secondary / accent (judiciary gold) */
-  --bolt-secondary: #c9a227;
-  --bolt-secondary-hover: #b8921f;
-  --bolt-secondary-muted: rgba(201, 162, 39, 0.12);
+  /* Secondary / accent (Purple-500) */
+  --bolt-secondary: #a855f7;
+  --bolt-secondary-hover: #9333ea;
+  --bolt-secondary-muted: #f3e8ff;
 
   /* Surface & background */
-  --bolt-background: #f7f4ed;
+  --bolt-background: #f9fafb; /* gray-50 */
   --bolt-surface: #ffffff;
   --bolt-surface-elevated: #ffffff;
 
   /* Text */
-  --bolt-text: #1a365d;
-  --bolt-text-muted: rgba(26, 54, 93, 0.7);
-  --bolt-text-subtle: rgba(26, 54, 93, 0.5);
+  --bolt-text: #1e293b; /* slate-800 */
+  --bolt-text-muted: #64748b; /* slate-500 */
+  --bolt-text-subtle: #94a3b8; /* slate-400 */
   --bolt-text-inverse: #ffffff;
 
   /* Border & divider */
-  --bolt-border: rgba(26, 54, 93, 0.12);
-  --bolt-border-strong: rgba(26, 54, 93, 0.2);
+  --bolt-border: #e2e8f0; /* slate-200 */
+  --bolt-border-strong: #cbd5e1; /* slate-300 */
 
   /* Status */
-  --bolt-success: #2d6a4f;
-  --bolt-error: #c1121f;
-  --bolt-warning: #bc6c25;
-  --bolt-info: #1a365d;
+  --bolt-success: #16a34a;
+  --bolt-error: #dc2626;
+  --bolt-warning: #ea580c;
+  --bolt-info: #2563eb;
 
   /* Typography scale (Bolt-style) */
   --bolt-font-sans: var(--font-sans), 'Open Sans', system-ui, sans-serif;

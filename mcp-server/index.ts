@@ -4,8 +4,8 @@
  * Connect TamboV1Provider via mcpServers: [{ url: 'http://localhost:3001/mcp', transport: MCPTransport.HTTP }]
  * when using Streamable HTTP (or use stdio for local CLI clients).
  */
-import { McpServer } from '@modelcontextprotocol/sdk/server/mcp';
-import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio';
+import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { z } from 'zod';
 
 const APP_URL = process.env.VIDHIFLOW_APP_URL ?? 'http://localhost:3000';
@@ -28,7 +28,7 @@ mcpServer.registerTool(
       year: z.number().optional().describe('Year'),
     },
   },
-  async (args) => {
+  async (args: any) => {
     const params = new URLSearchParams();
     if (args.caseNumber) params.set('caseNumber', args.caseNumber);
     if (args.diaryNumber) params.set('diaryNumber', args.diaryNumber);
@@ -54,7 +54,7 @@ mcpServer.registerTool(
       sector: z.string().optional().describe('Sector'),
     },
   },
-  async (args) => {
+  async (args: any) => {
     const params = new URLSearchParams();
     if (args.indicator) params.set('indicator', args.indicator);
     if (args.stateCode) params.set('stateCode', args.stateCode);
