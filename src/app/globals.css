@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../styles/design-tokens.css';
+
+:root {
+  --foreground: var(--bolt-text);
+  --background: var(--bolt-background);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--bolt-font-sans);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
