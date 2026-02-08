@@ -62,7 +62,7 @@ sequenceDiagram
     LLM->>LLM: Analyze Intent
     LLM->>UI: Request Tool Execution: mospi_fetch_indicator
     
-    rect rgb(240, 248, 255)
+    rect rgb(70, 74, 77)
         note right of UI: Tool execution is sandboxed
         UI->>MCP: POST /call/mospi_fetch_indicator
         MCP->>API: GET /api/mospi/indicator?state=DL
